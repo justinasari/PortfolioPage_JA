@@ -1,0 +1,194 @@
+/*Variables for Colors*/
+:root {
+    --backgroundColor: rgb(255, 255, 255);
+    --borderColor: rgb(0, 0, 0);
+    --navColor: rgb(168, 48, 48);
+    --textColor: rgb(255, 255, 255);
+    --secondaryText: rgb(0, 0, 0);
+    --hoverColor: rgb(20, 241, 186);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.maxWidth {
+    max-width: 1300px;
+    padding: 0 10px;
+    margin: auto;
+}
+
+/* Navigation Bar Styling */
+.navBar {
+    height: 100%;
+    width: 100%;
+    padding: 15px 0px;
+    background: var(--navColor);
+    font-family: 'Times New Roman', Times, serif
+}
+
+.navBar .maxWidth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navBar h1 {
+    color: var(--textColor);
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navBar .navList li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navBar .navList li a {
+    color: var(--textColor);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+
+
+a:hover {
+    color: var(--hoverColor);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*About Me Styling*/
+.firstContent {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    border-bottom: solid var(--navColor);
+}
+
+.aboutMe {
+    margin: 25px;
+    text-align: center;
+    text-decoration: underline var(--navColor);
+}
+
+.description {
+    width: 50%;
+    margin: 1% 25% auto;
+    padding: 0px 0px 25px 0px;
+}
+
+.profilePic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 25%;
+    height: auto;
+}
+
+/*Project List Styling*/
+.projectList {
+    display: flex;
+    flex: 4;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    background-color: var(backgroundColor);
+    border-bottom: solid var(--navColor);
+}
+
+.portfolio {
+    margin: 25px;
+    text-align: center;
+    text-decoration: underline var(--navColor);
+}
+
+h4 {
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    background: var(--navColor);
+    color: var(--textColor);
+}
+
+a {
+    color: var(--textColor);
+}
+
+.projectStandout {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 0 0 100%;
+    text-align: center;
+    color: var(--textColor);
+}
+
+.projectStandout:hover {
+    background: var(--hoverColor);
+    cursor: pointer;
+}
+
+.projectItem {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 0 0 50%;
+}
+
+.projectItem:hover {
+    background: var(--hoverColor);
+    cursor: pointer;
+}
+
+.projectItem h4 {
+    text-align: center;
+    padding: 20px;
+}
+
+.projectItem p {
+    text-align: center;
+}
+
+#King {
+    background-image: url(./imgs/King\ of\ the\ Hill.JPG);
+    background-size: 1200px;
+    background-position: center;
+}
+
+#Island {
+    background-image: url(./imgs/Island.JPG);
+    background-size: 720px;
+    background-position: center;
+    color: var(--textColor);
+}
+
+/*Contact Me Styling*/
+.contact {
+    margin: 25px;
+    text-align: center;
+    text-decoration: underline var(--navColor);
+}
+
+.contactList {
+    width: 75%;
+    text-align: center;
+    padding: 25px;
+    margin: auto;
+    border-radius: 25px 25px 0px 0px;
+    background: var(--navColor);
+    color: var(--textColor);
+    font-size: 24px;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    padding: 10px 50px 10px 50px;
+}
